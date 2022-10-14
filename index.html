@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/records.css" />
+    <title>K Fidelidade</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Fidelidade Digital do Kroissant</h1>
+    </header>
+    <main>
+      <button type="button" class="button blue mobile" id="cadastrarCliente">
+        Cadastrar Cliente
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>CPF</th>
+            <th>Pontuação</th>
+            <th>Operação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Julio</td>
+            <td>Hsu</td>
+            <td>09795226924</td>
+            <td>21</td>
+            <td>
+              <button type="button" class="button green">Editar</button>
+              <button type="button" class="button red">Remover</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Cliente</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form class="modal-form">
+            <input type="text" class="modal-field" placeholder="Nome" />
+            <input type="text" class="modal-field" placeholder="Sobrenome" />
+            <input type="text" class="modal-field" placeholder="CPF" />
+          </form>
+          <footer class="modal-footer">
+            <button class="button green">Salvar</button>
+            <button class="button red">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <footer>Paraíso de Croissants Mais Perto de Você!</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
